@@ -1,6 +1,6 @@
 # ElizaDialoGPT.github.io
 
-This is the repository that contains source code for the [ElizaDialoGPT website](https://ElizaDialoGPT.github.io)
+This is the repository that contains source code for the [ElizaDialoGPT website](https://mhd-medfa.github.io/ElizaDialoGPT.github.io/)
 
 Should you find our work useful, please cite
 ```

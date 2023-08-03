@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ElizaDialoGPT: Eliza-like chatbot with Transformers and DialoGPT fine-tuning">
+  <meta name="keywords" content="Eliza, DialoGPT, Transformers">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ElizaDialoGPT: Eliza-like chatbot with Transformers and DialoGPT fine-tuning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W9CQXNJW');</script>
+  <!-- End Google Tag Manager -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9CQXNJW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">ElizaDialoGPT: Eliza-like chatbot with Transformers and DialoGPT fine-tuning</h1>
+          <h2 class="title is-6 publlication-title">Innopolis University - March 2022</h2>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              <a href="https://mlengineer.me">Mohamad Al Mdfaa</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Mostafa Hegazy</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.derczynski.com/">Leon Derczynski</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Innpoolis University,</span>
+            <span class="author-block"><sup>2</sup>IT University of Copenhagen,</span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="assets/pdf/Eliza-like DialoGPT.pdf"
+                   class="external-link button is-normal ">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mhd-medfa/ElizaDialoGPT"
+                   class="external-link button is-normal ">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!--Colab Link-->
+              '<span class="link-block"><a href="https://colab.research.google.com/github/mhd-medfa/DialoGPTEliza/blob/main/ElizaDialoGPT.ipynb"
+                 class="external-link button is-normal"><span class="icon"><i class="fi-cnsuxl-google-colab"></i></span><span>Colab</span>
+              </a></span>'
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mhd-medfa/eliza/blob/master/dataset.csv"
+                   class="external-link button is-normal">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="column has-text-centered">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
+        <img source src="https://media.giphy.com/media/JrGYQZWou5Z51vNRob/giphy.gif" />
+      <!-- </video> -->
+      <h2 class="subtitle has-text-centered">
+        <span class="coolname">ElizaDialoGPT</span> is an Eliza-like chatbot trained on the transcripts from The Big Bang Theory TV show and the responses generated by the original Eliza. It utilizes transfer learning with DialoGPT to create a modern, data-driven Eliza without predefined rules.
+      </h2>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            
+          </p>
+          <p>
+            Making a chatbot in the past was an extremely hard problem due to various reasons including the complexity of mimicking the human behaviour and responses, the lack of training data, the natural language processing field was not as mature as today. Eliza was a rule-based chatbot that using a set of predefined rules made by the developers, So we utilized the power of transfer learning with the DialoGPT pretrained model in order to construct the modern Eliza which will be trained on a custom dataset from a modern TV series and the responses of the original Eliza and will not be using a predefined set of rules. We found that the fine-tuned model behaved in a way that mimics the human behavior from the TV series along with the original Eliza's behaviour.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">A snippet of the model's responses with fine-tuning</h3>
+        <div class="content has-text-justified">
+          <p>
+            In this experiment, the original psychologistic trait of the original Eliza bot is apparent as well as the sarcastic tone of the big bang theory show.
+          </p>
+          <img src="./static/images/fine_tuning_w_252_episodes_6.jpg" />
+        </div>
+        <br/>
+      </div>
+    </div>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{conceptfusion,
+      author    = {Mohamad Al Mdfaa, Mostafa Hegazy,and Leon Derczynski},
+      title     = {ElizaDialoGPT: Eliza-like chatbot with Transformers and DialoGPT fine-tuning},
+      journal   = {unpublished manuscript},
+      year      = {2022},
+    }</code></pre>
+      </div>
+    </section>
+    
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <a class="icon-link"
+             href="./assets/pdf/Eliza-like DialoGPT.pdf">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="https://github.com/mhd-medfa/ElizaDialoGPT" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+          </a>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website adapted from the Nerfies templates, which is licensed under <a rel="license" href="./LICENSE">MIT License</a>.
+              </p>
+              <p>
+                This means you are free to borrow the <a href="https://github.com/mhd-medfa/ElizaDialoGPT.github.io">source code</a> of this website,
+                we just ask that you link back to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies source code</a> in the footer.
+                Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    </body>
+    </html>
